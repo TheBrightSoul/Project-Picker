@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Clipboard History Manager",
+    "description": "Log everything you copy with search & timestamp",
+    "difficulty": "3"
+  },
+  {
+    "name": "Expense Tracker",
+    "description": "Track spending by category and visualize trends",
+    "difficulty": "2"
+  },
+  {
+    "name": "AI Joke Generator",
+    "description": "Generate puns and dad jokes powered by AI",
+    "difficulty": "4"
+  },
+  {
+    "name": "Task Scheduler",
+    "description": "Prioritize tasks based on deadlines and importance",
+    "difficulty": "5"
+  },
+  {
+    "name": "Weather Dashboard",
+    "description": "Show current weather and forecast for multiple cities",
+    "difficulty": "3"
+  }
+]
