@@ -121,9 +121,13 @@ const ProjectCard = () => {
             <label className="text-sm mr-2 font-medium">Status:</label>
             <select
               className="border rounded px-2 py-1 text-sm"
-              value={projectStatusMap[project.name]?.status || "Will Do Soon"}
+              value={
+                projectStatusMap[project.name]?.status ||
+                "Don't want to Start it yet"
+              }
               onChange={(e) => updateStatus(project.name, e.target.value)}
             >
+              <option>Don't want to Start it yet</option>
               <option>Will Do Soon</option>
               <option>Working on it</option>
               <option>Completed</option>
