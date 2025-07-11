@@ -1,27 +1,357 @@
 [
   {
     "name": "Clipboard History Manager",
-    "description": "Log everything you copy with search & timestamp",
+    "description": "Log everything you copy, store it locally with search and timestamps",
     "difficulty": "3"
   },
   {
-    "name": "Expense Tracker",
-    "description": "Track spending by category and visualize trends",
+    "name": "Water Reminder App",
+    "description": "Reminds you every X minutes to drink water via notification or sound",
     "difficulty": "2"
   },
   {
-    "name": "AI Joke Generator",
-    "description": "Generate puns and dad jokes powered by AI",
+    "name": "App & Website Launcher",
+    "description": "Launch apps or URLs with a single click from a GUI",
+    "difficulty": "2"
+  },
+  {
+    "name": "File Organizer",
+    "description": "Organizes downloads folder by file type or date",
+    "difficulty": "1"
+  },
+  {
+    "name": "Focus Timer (Pomodoro)",
+    "description": "25min focus + 5min break timer with notification and log",
+    "difficulty": "2"
+  },
+  {
+    "name": "Quote of the Day App",
+    "description": "Shows a random motivational quote daily from local or API source",
+    "difficulty": "1"
+  },
+  {
+    "name": "Daily Journal Logger",
+    "description": "Lets you write & save small daily entries with date tagging",
+    "difficulty": "2"
+  },
+  {
+    "name": "Minimal Expense Tracker",
+    "description": "Simple budget app with category, notes, and totals",
+    "difficulty": "3"
+  },
+  {
+    "name": "Offline Task Manager",
+    "description": "To-do app with tagging, priorities, due dates — all offline",
+    "difficulty": "3"
+  },
+  {
+    "name": "System Cleaner Script",
+    "description": "Deletes temp files, empties Recycle Bin, clears browser cache",
+    "difficulty": "2"
+  },
+  {
+    "name": "Auto Wallpaper Changer",
+    "description": "Changes wallpaper daily/randomly from a folder",
+    "difficulty": "2"
+  },
+  {
+    "name": "Notes App with Markdown",
+    "description": "Note-taking app that supports markdown preview and saves locally",
+    "difficulty": "3"
+  },
+  {
+    "name": "Folder Size Visualizer",
+    "description": "Shows visual breakdown of folder/file sizes (like WinDirStat)",
     "difficulty": "4"
   },
   {
-    "name": "Task Scheduler",
-    "description": "Prioritize tasks based on deadlines and importance",
-    "difficulty": "5"
+    "name": "Notification Scheduler",
+    "description": "Schedule future notifications with title and custom repeat cycles",
+    "difficulty": "3"
   },
   {
-    "name": "Weather Dashboard",
-    "description": "Show current weather and forecast for multiple cities",
+    "name": "Screenshot Organizer",
+    "description": "Detect new screenshots and move them to categorized folders",
+    "difficulty": "2"
+  },
+  {
+    "name": "Battery Health Monitor",
+    "description": "Show system battery stats + charging cycles (Windows)",
     "difficulty": "3"
+  },
+  {
+    "name": "System Uptime Tracker",
+    "description": "Log every time PC is turned on/off and show usage stats",
+    "difficulty": "3"
+  },
+  {
+    "name": "Wi-Fi Auto Reconnect Tool",
+    "description": "Detect weak connection and auto reconnect to preferred network",
+    "difficulty": "3"
+  },
+  {
+    "name": "Local Media Player",
+    "description": "Basic player with custom hotkeys like 2x speed on spacebar hold",
+    "difficulty": "4"
+  },
+  {
+    "name": "Clipboard Translator",
+    "description": "Copies translated version of copied text (auto-detect lang + paste)",
+    "difficulty": "4"
+  },
+  {
+    "name": "Habit Tracker",
+    "description": "Track daily habits with streaks, reminders, and charts",
+    "difficulty": "3"
+  },
+  {
+    "name": "Mood Logger",
+    "description": "Log your daily mood with tags, emojis, and reflections",
+    "difficulty": "2"
+  },
+  {
+    "name": "Startup App Delay Manager",
+    "description": "Delay specific apps from launching at Windows boot",
+    "difficulty": "3"
+  },
+  {
+    "name": "Self-Destruct Notes",
+    "description": "Notes that disappear after a timer or view count",
+    "difficulty": "2"
+  },
+  {
+    "name": "Daily Affirmation Generator",
+    "description": "Shows random affirmations every morning",
+    "difficulty": "1"
+  },
+  {
+    "name": "Custom Alarm Clock",
+    "description": "Set alarms with custom sounds and repeat schedules",
+    "difficulty": "3"
+  },
+  {
+    "name": "Offline Dictionary App",
+    "description": "Store meanings of words locally with search",
+    "difficulty": "2"
+  },
+  {
+    "name": "Quick Contacts Launcher",
+    "description": "Tap to call/message specific contacts instantly",
+    "difficulty": "2"
+  },
+  {
+    "name": "Voice to Text Note App",
+    "description": "Record voice and convert to text for notes",
+    "difficulty": "3"
+  },
+  {
+    "name": "Time Tracker",
+    "description": "Track how long you spend on each task or app",
+    "difficulty": "4"
+  },
+  {
+    "name": "Flashcard App",
+    "description": "Learn with spaced repetition flashcards",
+    "difficulty": "3"
+  },
+  {
+    "name": "Code Snippet Manager",
+    "description": "Save and search code snippets by tag/language",
+    "difficulty": "3"
+  },
+  {
+    "name": "Internet Connection Logger",
+    "description": "Monitor and log uptime/downtime with timestamps",
+    "difficulty": "3"
+  },
+  {
+    "name": "Low Storage Notifier",
+    "description": "App to notify when disk space drops below a threshold",
+    "difficulty": "2"
+  },
+  {
+    "name": "Internet Usage Monitor",
+    "description": "Track data usage per session or daily",
+    "difficulty": "3"
+  },
+  {
+    "name": "APK Size Analyzer",
+    "description": "Upload APKs and analyze size, resources, permissions",
+    "difficulty": "4"
+  },
+  {
+    "name": "Voice Command Launcher",
+    "description": "Launch apps or open websites using voice",
+    "difficulty": "3"
+  },
+  {
+    "name": "Auto Rename Tool",
+    "description": "Batch rename files based on rules (dates, numbering, etc.)",
+    "difficulty": "2"
+  },
+  {
+    "name": "App Usage Tracker",
+    "description": "Log how long you use each app daily (like Digital Wellbeing)",
+    "difficulty": "4"
+  },
+  {
+    "name": "Notes from Notifications",
+    "description": "Save and tag specific notifications as notes",
+    "difficulty": "3"
+  },
+  {
+    "name": "Lyrics Finder",
+    "description": "Paste song name and get lyrics (optional API)",
+    "difficulty": "2"
+  },
+  {
+    "name": "Offline Recipe Manager",
+    "description": "Save, tag, and search cooking recipes",
+    "difficulty": "2"
+  },
+  {
+    "name": "Package Tracker",
+    "description": "Add courier tracking numbers and check status updates",
+    "difficulty": "3"
+  },
+  {
+    "name": "Fitness Progress Logger",
+    "description": "Log weight, body stats, PRs, etc. weekly",
+    "difficulty": "3"
+  },
+  {
+    "name": "Mind Dump App",
+    "description": "Unfiltered note app for brain dumping thoughts",
+    "difficulty": "2"
+  },
+  {
+    "name": "Expense Splitter",
+    "description": "Split bills among friends with debt tracking",
+    "difficulty": "3"
+  },
+  {
+    "name": "App Version Tracker",
+    "description": "Track installed apps and their versions on your system",
+    "difficulty": "3"
+  },
+  {
+    "name": "File Difference Checker",
+    "description": "Compare contents of two files and highlight differences",
+    "difficulty": "2"
+  },
+  {
+    "name": "Remind Me Later Tool",
+    "description": "Move tasks or links to 'Remind me in X time' list",
+    "difficulty": "2"
+  },
+  {
+    "name": "Stopwatch + Lap Timer",
+    "description": "Simple stopwatch with lap records",
+    "difficulty": "1"
+  },
+  {
+    "name": "Ambient Sound Generator",
+    "description": "Play background sounds like rain, wind, white noise",
+    "difficulty": "2"
+  },
+  {
+    "name": "QR Code Generator",
+    "description": "Generate and export QR codes for text, links, contact info",
+    "difficulty": "2"
+  },
+  {
+    "name": "QR Code Scanner with History",
+    "description": "Scan QR and store a log of scanned data",
+    "difficulty": "3"
+  },
+  {
+    "name": "Project Idea Vault",
+    "description": "Save and categorize your future project ideas",
+    "difficulty": "2"
+  },
+  {
+    "name": "Text Expander Tool",
+    "description": "Type shortcuts that expand into full text",
+    "difficulty": "3"
+  },
+  {
+    "name": "Local Book Tracker",
+    "description": "Track your physical/digital books, notes, and reading status",
+    "difficulty": "2"
+  },
+  {
+    "name": "Smart Clipboard Templates",
+    "description": "Store reusable copy-paste templates",
+    "difficulty": "3"
+  },
+  {
+    "name": "Desktop Timer Bar",
+    "description": "Visual progress bar overlay while working",
+    "difficulty": "4"
+  },
+  {
+    "name": "Smart Screenshot Tool",
+    "description": "Auto-save screenshots in folders by app/game",
+    "difficulty": "3"
+  },
+  {
+    "name": "Mouse Tracker",
+    "description": "Track and visualize mouse movement heatmap",
+    "difficulty": "4"
+  },
+  {
+    "name": "Auto File Backup App",
+    "description": "Monitor folders and auto-copy to backup location",
+    "difficulty": "3"
+  },
+  {
+    "name": "Emoji Picker Launcher",
+    "description": "Show emojis grouped by mood and copy on click",
+    "difficulty": "2"
+  },
+  {
+    "name": "Minimal Music Player",
+    "description": "Lightweight player with hotkeys, volume control",
+    "difficulty": "3"
+  },
+  {
+    "name": "Weather App (Offline Cache)",
+    "description": "Fetch weather once/day and cache it offline",
+    "difficulty": "3"
+  },
+  {
+    "name": "Auto Email Formatter",
+    "description": "Paste messy text and format it into proper email",
+    "difficulty": "2"
+  },
+  {
+    "name": "Multilingual Word of the Day",
+    "description": "Show new word daily in multiple languages",
+    "difficulty": "2"
+  },
+  {
+    "name": "Simple Screen Time Lock",
+    "description": "Prevent access to apps after X mins/day (mock)",
+    "difficulty": "3"
+  },
+  {
+    "name": "Meeting Notes Logger",
+    "description": "App to log meeting title, date, and key points",
+    "difficulty": "2"
+  },
+  {
+    "name": "Contact Backup to File",
+    "description": "Export contacts to CSV/JSON locally",
+    "difficulty": "2"
+  },
+  {
+    "name": "Wallpaper Organizer",
+    "description": "Manage wallpapers with preview and set as desktop",
+    "difficulty": "3"
+  },
+  {
+    "name": "Startup Notes Reminder",
+    "description": "Show daily message or notes every time PC boots",
+    "difficulty": "2"
   }
 ]
