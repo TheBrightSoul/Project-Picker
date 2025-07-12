@@ -45,6 +45,15 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
+/* Register your background image using new CSS-first method
+@layer utilities {
+  .bg-hacker-stars {
+    background-image: url("/app/public/GalaxyBackground.png");
+    background-size: cover;
+    background-position: center;
+  }
+} */
+
 /* :root {
   font: var(--font-mono);
 } */
@@ -60,6 +69,14 @@
   }
 } */
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -72,11 +89,11 @@
   width: 6px;
 }
 .custom-scrollbar-light::-webkit-scrollbar-track {
-  background: var(--color-hacker-card-light);
+  background: rgba(229, 231, 235, 0.2);
   border-radius: 10px;
 }
 .custom-scrollbar-light::-webkit-scrollbar-thumb {
-  background: var(--color-hacker-border-light);
+  background: rgba(229, 231, 235, 1);
   border-radius: 10px;
 }
 .custom-scrollbar-light::-webkit-scrollbar-thumb:hover {

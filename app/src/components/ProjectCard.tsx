@@ -131,7 +131,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
     bgColor: string
   ) => {
     return (
-      <div className="flex-1 bg-hacker-card-light dark:bg-hacker-card-dark rounded-lg border border-hacker-border-light dark:border-hacker-border-dark ">
+      <div className="flex-1 bg-hacker-card-light/30 dark:bg-hacker-card-dark/30 rounded-lg border border-hacker-border-light dark:border-hacker-border-dark ">
         <h2
           className={`text-xl font-bold mb-4 ${bgColor} text-white px-4 py-3 rounded-t-lg `}
         >
@@ -146,7 +146,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
             {projects.map((project, index) => (
               <div
                 key={`${title}-${index}`}
-                className="bg-white dark:bg-hacker-card-dark shadow-md rounded-lg p-4 border border-hacker-border-light dark:border-hacker-border-dark hover:shadow-lg transition-shadow"
+                className="bg-hacker-card-light/20 dark:bg-hacker-card-dark/20 shadow-md rounded-lg p-4 border border-hacker-border-light dark:border-hacker-border-dark hover:shadow-lg transition-shadow"
               >
                 <h3 className="text-lg font-bold text-hacker-text-light dark:text-hacker-text-dark mb-2">
                   {project.name}
@@ -230,17 +230,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
         {renderProjectColumn(
           easyProjects,
           "Easy Projects",
-          "bg-difficulty-easy"
+          "bg-difficulty-easy/30"
         )}
         {renderProjectColumn(
           mediumProjects,
           "Medium Projects",
-          "bg-difficulty-medium"
+          "bg-difficulty-medium/30"
         )}
         {renderProjectColumn(
           hardProjects,
           "Hard Projects",
-          "bg-difficulty-hard"
+          "bg-difficulty-hard/30"
         )}
       </div>
     </div>

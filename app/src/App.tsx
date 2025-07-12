@@ -1,7 +1,9 @@
-//App.tsx
-
 import React, { useEffect, useState } from "react";
-import ProjectCard from "./components/ProjectCard";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
 import ThemeButton from "./components/ThemeButton";
 
 function App() {
@@ -27,13 +29,23 @@ function App() {
   };
 
   return (
-    <div className="h-screen bg-hacker-bg-light dark:bg-hacker-bg-dark overflow-hidden flex flex-col py-10 px-50 transition-all duration-300  font-mono">
-      {/* <h1 className="text-2xl font-bold text-center text-hacker-text-light dark:text-hacker-text-dark py-4 flex-shrink-0">
-        🔮 Projects
-      </h1> */}
-      <ProjectCard darkMode={darkMode} />
-      <ThemeButton darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-[url('/GalaxyBackgroundLight.png')] dark:bg-[url('/GalaxyBackground.png')] dark:bg-no-repeat dark:bg-center dark:bg-cover overflow-hidden">
+        <div className="h-screen overflow-hidden flex flex-col font-mono">
+          <Navbar />
+          <div className="flex-1 overflow-auto">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route
+                path="/projects"
+                element={<ProjectsPage darkMode={darkMode} />}
+              />
+            </Routes>
+          </div>
+          <ThemeButton darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        </div>
+      </div>
+    </Router>
   );
 }
 
