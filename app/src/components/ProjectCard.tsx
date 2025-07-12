@@ -110,13 +110,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
       return updated;
     });
   };
+
   const decrementDays = (projectName: string) => {
     setProjectStatusMap((prev) => {
       const updated = {
         ...prev,
         [projectName]: {
           ...prev[projectName],
-          daysWorked: (prev[projectName]?.daysWorked || 0) - 1,
+          daysWorked: Math.max(0, (prev[projectName]?.daysWorked || 0) - 1),
         },
       };
       localStorage.setItem("projectStatuses", JSON.stringify(updated));
@@ -132,7 +133,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
     return (
       <div className="flex-1 bg-hacker-card-light dark:bg-hacker-card-dark rounded-lg border border-hacker-border-light dark:border-hacker-border-dark ">
         <h2
-          className={`text-xl font-bold mb-4 ${bgColor} text-white px-4 py-3 rounded-t-lg text-shadow-[1px_2px_10px_#000000]`}
+          className={`text-xl font-bold mb-4 ${bgColor} text-white px-4 py-3 rounded-t-lg `}
         >
           {title} ({projects.length})
         </h2>
@@ -226,9 +227,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
     </div>
     */}
       <div className="flex-1 flex gap-30 min-h-0">
-        {renderProjectColumn(easyProjects, "Easy Projects", "bg-neon-green")}
-        {renderProjectColumn(mediumProjects, "Medium Projects", "bg-neon-blue")}
-        {renderProjectColumn(hardProjects, "Hard Projects", "bg-neon-pink")}
+        {renderProjectColumn(
+          easyProjects,
+          "Easy Projects",
+          "bg-difficulty-easy"
+        )}
+        {renderProjectColumn(
+          mediumProjects,
+          "Medium Projects",
+          "bg-difficulty-medium"
+        )}
+        {renderProjectColumn(
+          hardProjects,
+          "Hard Projects",
+          "bg-difficulty-hard"
+        )}
       </div>
     </div>
   );

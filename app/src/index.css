@@ -15,6 +15,10 @@
   --color-neon-blue: #00b7ff;
   --color-neon-pink: #ff00ff;
 
+  --color-difficulty-easy: #00b7ff; /* Neon Blue */
+  --color-difficulty-medium: #9f00ff; /* Mystic Violet */
+  --color-difficulty-hard: #ff2052; /* Plasma Ember */
+
   --color-background-light: #f3f4f6;
   --color-card-light: #e5e7eb;
   --color-border-light: #d1d5db;
