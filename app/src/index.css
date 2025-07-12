@@ -45,6 +45,17 @@
   font: var(--font-mono);
 } */
 
+/* select option {
+  background-color: #1a1c29;
+  color: #d1d5db;
+} */
+/* @media (prefers-color-scheme: dark) {
+  select option {
+    background-color: #1a1c29;
+    color: #d1d5db;
+  }
+} */
+
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

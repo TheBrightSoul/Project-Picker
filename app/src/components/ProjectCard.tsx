@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 
+import StatusSelector from "./StatusSelector";
+
 interface Project {
   name: string;
   description: string;
@@ -128,9 +130,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
     bgColor: string
   ) => {
     return (
-      <div className="flex-1 bg-hacker-card-light dark:bg-hacker-card-dark rounded-lg border border-hacker-border-light dark:border-hacker-border-dark">
+      <div className="flex-1 bg-hacker-card-light dark:bg-hacker-card-dark rounded-lg border border-hacker-border-light dark:border-hacker-border-dark ">
         <h2
-          className={`text-xl font-bold mb-4 ${bgColor} text-white px-4 py-3 rounded-t-lg`}
+          className={`text-xl font-bold mb-4 ${bgColor} text-white px-4 py-3 rounded-t-lg text-shadow-[1px_2px_10px_#000000]`}
         >
           {title} ({projects.length})
         </h2>
@@ -158,44 +160,37 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ darkMode }) => {
                   {renderStars(project.difficulty)}
                 </div>
                 <div className="space-y-2">
-                  <div>
-                    <label className="text-xs font-medium text-hacker-text-light dark:text-hacker-text-dark">
-                      Status:
-                    </label>
-                    <select
-                      className="border border-hacker-border-light dark:border-hacker-border-dark rounded px-2 py-1 text-xs w-full mt-1 bg-white dark:bg-hacker-card-dark text-hacker-text-light dark:text-hacker-text-dark"
-                      value={
-                        projectStatusMap[project.name]?.status ||
-                        "Don't want to Start it yet"
-                      }
-                      onChange={(e) =>
-                        updateStatus(project.name, e.target.value)
-                      }
-                    >
-                      <option>Don't want to Start it yet</option>
-                      <option>Will Do Soon</option>
-                      <option>Working on it</option>
-                      <option>Completed</option>
-                    </select>
-                  </div>
+                  <StatusSelector
+                    value={projectStatusMap[project.name]?.status}
+                    onChange={(val) => updateStatus(project.name, val)}
+                  />
+
                   {projectStatusMap[project.name]?.status ===
                     "Working on it" && (
-                    <div className="flex items-center justify-between bg-blue-50 dark:bg-blue-900/30 p-2 rounded">
+                    <div className="flex items-center justify-between gap-2 rounded p-2 shadow-inner bg-[rgba(0,255,159,0.08)] dark:bg-[rgba(0,255,159,0.12)]">
                       <button
                         onClick={() => incrementDays(project.name)}
-                        className="text-s bg-neon-blue text-white px-2 py-1 rounded hover:bg-neon-blue/80"
+                        className="text-sm px-2 py-1 rounded bg-neon-green text-hacker-text-dark hover:bg-neon-green/80 shadow-md hover:shadow-[0_0_6px_rgba(0,255,159,0.4)] transition"
                       >
-                        +
+                        <h1 className="font-extrabold text-xl text-hacker-bg-light dark:text-hacker-bg-dark text-shadow-md/30 text-shadow-hacker-bg-dark">
+                          +
+                        </h1>
                       </button>
-                      <span className="text-xs text-neon-blue dark:text-neon-blue/80">
+
+                      <span className="text-xs text-hacker-text-light dark:text-hacker-text-dark">
                         worked on it for{" "}
-                        {projectStatusMap[project.name]?.daysWorked || 0} days
+                        <span className="font-semibold text-neon-green">
+                          {projectStatusMap[project.name]?.daysWorked || 0}
+                        </span>{" "}
+                        days
                       </span>
                       <button
                         onClick={() => decrementDays(project.name)}
-                        className="text-s bg-neon-blue text-white px-2 py-1 rounded hover:bg-neon-blue/80"
+                        className="text-sm px-2 py-1 rounded bg-neon-green text-hacker-text-dark hover:bg-neon-green/80 shadow-md hover:shadow-[0_0_6px_rgba(0,255,159,0.4)] transition"
                       >
-                        -
+                        <h1 className="font-extrabold text-xl text-hacker-bg-light dark:text-hacker-bg-dark text-shadow-md/30 text-shadow-hacker-bg-dark">
+                          -
+                        </h1>
                       </button>
                     </div>
                   )}
