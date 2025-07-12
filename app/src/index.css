@@ -1,1 +1,84 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "tailwindcss";
+
+@theme {
+  /* ===== Colors ===== */
+  --color-background-dark: #0f111a;
+  --color-card-dark: #1a1c29;
+  --color-border-dark: #2d2f45;
+  --color-text-dark: #d1d5db;
+
+  --color-neon-green: #00ff9f;
+  --color-neon-blue: #00b7ff;
+  --color-neon-pink: #ff00ff;
+
+  --color-background-light: #f3f4f6;
+  --color-card-light: #e5e7eb;
+  --color-border-light: #d1d5db;
+  --color-text-light: #111827;
+
+  /* Assign them to Tailwind classes Dark*/
+  --color-hacker-bg-dark: var(--color-background-dark);
+  --color-hacker-card-dark: var(--color-card-dark);
+  --color-hacker-border-dark: var(--color-border-dark);
+  --color-hacker-text-dark: var(--color-text-dark);
+  --color-hacker-accent-dark: var(--color-neon-green);
+  /* Assign them to Tailwind classes Light*/
+  --color-hacker-bg-light: var(--color-background-light);
+  --color-hacker-card-light: var(--color-card-light);
+  --color-hacker-border-light: var(--color-border-light);
+  --color-hacker-text-light: var(--color-text-light);
+  --color-hacker-accent-light: var(--color-neon-green);
+
+  --shadow-neon-green: 0 0 10px #00ff9f, 0 0 20px #00ff9f;
+  --shadow-neon-blue: 0 0 10px #00b7ff, 0 0 20px #00b7ff;
+  --shadow-neon-pink: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+
+  /* Optional Font */
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* :root {
+  font: var(--font-mono);
+} */
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.custom-scrollbar-light::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar-light::-webkit-scrollbar-track {
+  background: var(--color-hacker-card-light);
+  border-radius: 10px;
+}
+.custom-scrollbar-light::-webkit-scrollbar-thumb {
+  background: var(--color-hacker-border-light);
+  border-radius: 10px;
+}
+.custom-scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hacker-accent-light);
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-track {
+  background: var(--color-hacker-card-dark);
+  border-radius: 10px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  background: var(--color-hacker-border-dark);
+  border-radius: 10px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hacker-accent-dark);
+}
